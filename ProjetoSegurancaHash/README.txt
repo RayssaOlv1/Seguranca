@@ -27,7 +27,7 @@ COMO DIVIDIR:
 - Interante 3: seguranca.assimetrica.AssimetricaPanel
 - Interante 4: seguranca.assinatura.AssinaturaPanel
 
-Cada painel é uma classe independente. Para manter a integração simples, os amigos devem preservar o nome da classe,
+Cada painel é uma classe independente. Para manter a integração simples, os integrantes devem preservar o nome da classe,
 o nome do pacote e o construtor público sem argumentos. Podem adicionar classes auxiliares dentro do respectivo pacote.
 
 HASH:
