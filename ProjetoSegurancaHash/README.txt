@@ -22,10 +22,10 @@ ABRIR:
 Se o NetBeans não reconhecer o projeto, crie um projeto Java com Ant e copie a pasta src inteira.
 
 COMO DIVIDIR:
-- Você: seguranca.hash.HashPanel
-- Amigo 1: seguranca.simetrica.SimetricaPanel
-- Amigo 2: seguranca.assimetrica.AssimetricaPanel
-- Amigo 3: seguranca.assinatura.AssinaturaPanel
+- Interante 1: seguranca.hash.HashPanel
+- Integrante 2: seguranca.simetrica.SimetricaPanel
+- Interante 3: seguranca.assimetrica.AssimetricaPanel
+- Interante 4: seguranca.assinatura.AssinaturaPanel
 
 Cada painel é uma classe independente. Para manter a integração simples, os amigos devem preservar o nome da classe,
 o nome do pacote e o construtor público sem argumentos. Podem adicionar classes auxiliares dentro do respectivo pacote.
