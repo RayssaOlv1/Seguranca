@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ProjetoSegurancaHash" default="run" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="jar.file" value="${dist.dir}/ProjetoSegurancaHash.jar"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"
+               source="1.8" target="1.8" encoding="UTF-8"
+               includeantruntime="false"/>
+    </target>
+    <target name="jar" depends="compile">
+        <mkdir dir="${dist.dir}"/>
+        <jar destfile="${jar.file}" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="seguranca.Seguranca"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="seguranca.Seguranca" fork="true">
+            <classpath><pathelement location="${classes.dir}"/></classpath>
+        </java>
+    </target>
+</project>
